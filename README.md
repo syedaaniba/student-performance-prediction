@@ -1,3 +1,7 @@
+That's happening because the text you're copying is already in a plain text format without the necessary Markdown syntax. To get the clean, formatted look on GitHub, you need to use specific symbols that GitHub's renderer understands.
+
+Here is the entire README.md file again, with the correct Markdown syntax applied. If you copy and paste this text exactly as it appears below into your README.md file, it will display correctly on GitHub with proper headings, lists, and code blocks.
+
 Student Performance Prediction
 What This Does
 This is a machine learning project that predicts how well students perform academically. The dataset contains information about students' demographics and their test scores in math, reading, and writing. The goal is to identify factors that influence academic success and predict outcomes for new students.
