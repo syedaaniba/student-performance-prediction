@@ -25,6 +25,32 @@ For this task, I used a **Random Forest Regressor** to predict the exact average
 
 ---
 
+4.  **Run the notebook cells one by one** to perform data analysis, train the models, and view the results.
+
+---
+
+### Results
+
+* **Logistic Regression accuracy:** ~86%
+* **Random Forest accuracy:** ~85.5%
+* **Random Forest Regressor RMSE:** ~14.78 points
+
+---
+
+### Key Findings
+
+The analysis shows these factors significantly influence student performance:
+
+* Parental education level
+* Completion of a test preparation course
+* Lunch type
+
+---
+
+### Conclusion
+
+This project demonstrates practical machine learning skills like data preprocessing, model training, and evaluation. The models are effective at predicting student pass/fail status and average scores, which could be useful for academic interventions or support programs.
+
 ## Dataset
 
 The dataset contains:
