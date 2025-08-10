@@ -1,55 +1,82 @@
-Student Performance Prediction
-What This Does
-Basically, this is a machine learning project to predict how well students perform academically. The dataset contains information about students' demographics and test scores. The goal is to provide insights into the factors that influence academic success and to predict outcomes for new students.
+# Student Performance Prediction
 
-How I Did It
-The project has two main parts: a classification task and a regression task.
+## What This Does
 
-Classification (Pass/Fail Prediction)
-I used two models for this: a Logistic Regression model and a Random Forest Classifier. The process involved:
+This is a machine learning project that predicts how well students perform academically. The dataset contains information about students' demographics and their test scores in math, reading, and writing. The goal is to identify factors that influence academic success and predict outcomes for new students.
 
-Data Loading: The dataset was loaded, and an average_score column was created.
+## How I Did It
 
-Preprocessing: I converted the categorical columns (like gender and parental education) into numerical values so the models could understand them.
+The project addresses two main machine learning tasks: a classification task and a regression task.
 
-Training: The data was split into a training set and a testing set, and the models were trained.
+### Classification (Pass/Fail Prediction)
 
-Evaluation: I checked how well the models performed using accuracy metrics.
+I used a Logistic Regression model and a Random Forest Classifier. The pipeline for this was:
 
-Regression (Average Score Prediction)
-For this task, I used a Random Forest Regressor to predict the exact average score. The process was similar to the classification pipeline, with the final step being model evaluation using the Root Mean Squared Error (RMSE).
+- **Data Loading:** The dataset was loaded, and an `avg_score` column was created.
+- **Preprocessing:** Categorical data was converted into numerical values that the models could understand using one-hot encoding.
+- **Training:** The data was split into training and testing sets, and the models were trained on the training data.
+- **Evaluation:** The models were evaluated on the test data using accuracy metrics.
 
-Wanna Run It Yourself?
-You can clone the repo and run the Jupyter Notebook. It's pretty straightforward.
+### Regression (Average Score Prediction)
 
-Clone the repository:
+For this task, I used a Random Forest Regressor to predict the exact average score. The process was similar to the classification pipeline, with the final step being evaluation using the Root Mean Squared Error (RMSE).
 
-Bash
+## Dataset
 
-git clone https://github.com/syedaaniba/student-performance-prediction.git
-Go into the project folder:
+The dataset contains:
 
-Bash
+- Gender
+- Race/ethnicity
+- Parental level of education
+- Type of lunch (standard or free/reduced)
+- Test preparation course completion status
+- Scores in math, reading, and writing
 
-cd student-performance-prediction
-Install the libraries: Make sure you have pandas and scikit-learn installed. If not, just run:
+## How to Run This Project
 
-Bash
+### Prerequisites
 
+Make sure Python is installed along with these libraries:
+
+```bash
 pip install pandas numpy scikit-learn matplotlib
-Launch the notebook:
+Steps
+Clone this repository:
 
-Bash
+bash
+Copy
+Edit
+git clone https://github.com/syedaaniba/student-performance-prediction.git
+Change directory into the project folder:
 
+bash
+Copy
+Edit
+cd student-performance-prediction
+Open the Jupyter notebook:
+
+bash
+Copy
+Edit
 jupyter notebook studentperformance.ipynb
-Results
-The models performed well in both tasks.
+Run the notebook cells one by one to perform data analysis, train the models, and view the results.
 
+Results
 Logistic Regression accuracy: ~86%
 
 Random Forest accuracy: ~85.5%
 
-Regression RMSE: ~14.78 points
+Random Forest Regressor RMSE: ~14.78 points
+
+Key Findings
+The analysis shows these factors significantly influence student performance:
+
+Parental education level
+
+Completion of a test preparation course
+
+Lunch type
 
 Conclusion
-The models are effective at predicting student outcomes. My analysis shows that key factors influencing performance include parental education level, test preparation course completion, and the type of lunch a student has.
+This project demonstrates practical machine learning skills like data preprocessing, model training, and evaluation. The models are effective at predicting student pass/fail status and average scores, which could be useful for academic interventions or support programs.
+
