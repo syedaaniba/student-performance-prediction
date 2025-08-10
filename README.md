@@ -45,7 +45,7 @@ The dataset contains:
 Make sure Python is installed along with these libraries:
 
 ```bash
-pip install pandas numpy scikit-learn matplotlib
+pip install pandas numpy scikit-learn matplotlib 
 
 ### Steps
 
